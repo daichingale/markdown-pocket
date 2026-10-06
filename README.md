@@ -1,5 +1,7 @@
 # Markdown Pocket v2.0 — Windows Portable Rust Markdown Editor
 
+[![Build Windows Portable EXE](https://github.com/daichingale/markdown-pocket/actions/workflows/build-windows.yml/badge.svg)](https://github.com/daichingale/markdown-pocket/actions/workflows/build-windows.yml)
+
 学校PC向けの **インストール不要 / PowerShell不要 / 単体EXE** を目標にしたRust製Markdownエディターです。
 
 ## v2.0 の機能
@@ -21,8 +23,17 @@
 設定や自動保存を残したい場合は、EXEを置いたフォルダに書き込み権限が必要です。
 
 ## GitHub ActionsでEXEを作る
-このフォルダ一式をGitHubリポジトリへ入れ、Actionsの `Build Windows Portable EXE` を実行します。
-生成物 `Markdown-Pocket-Windows-Portable` の中に `markdown-pocket.exe` が入ります。
+`main` ブランチへ変更を反映すると、GitHub Actionsの `Build Windows Portable EXE` が自動実行されます。手動で実行する場合は、[ワークフロー画面](https://github.com/daichingale/markdown-pocket/actions/workflows/build-windows.yml)を開き、**Run workflow** を選択してください。
+
+### 完成したEXEのダウンロード方法
+
+1. [Build Windows Portable EXE の実行一覧](https://github.com/daichingale/markdown-pocket/actions/workflows/build-windows.yml)を開きます。
+2. 緑色のチェックが付いた最新の実行をクリックします。
+3. 実行結果ページの一番下にある **Artifacts** までスクロールします。
+4. **Markdown-Pocket-Windows-Portable** をクリックしてZIPをダウンロードします。
+5. ZIPを展開すると、中に `markdown-pocket.exe` が入っています。
+
+> GitHub ActionsのArtifactsをダウンロードするには、GitHubへのログインが必要です。
 
 ## ローカルでビルドする場合
 Rustが入ったPCで:
