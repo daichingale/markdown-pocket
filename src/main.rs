@@ -359,7 +359,7 @@ impl eframe::App for MarkdownPocket {
                 ));
                 if self.tab().dirty {
                     ui.separator();
-                    ui.label("未保存")
+                    ui.label("未保存");
                 }
             })
         });
